@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(fonts/Raleway-Light.ttf);
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#container {
+  width: 100%;
+  max-width: 1200px;
+}
+
 /*corps de la page*/
 
 header h1 {
