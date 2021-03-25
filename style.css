@@ -1,9 +1,17 @@
+/****************réglage génerale*****************/
+
 @font-face {
   font-family: "Raleway";
   src: url(fonts/Raleway-Light.ttf);
 }
+
 body {
   font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 1rem;
 }
 
 #container {
@@ -11,7 +19,7 @@ body {
   max-width: 1200px;
 }
 
-/*corps de la page*/
+/*********************corps de la page************************/
 
 header h1 {
   font-size: 0.8em;
@@ -52,11 +60,17 @@ nav a {
   padding-right: 10px;
   margin-right: 30px;
 }
+strong {
+  text-decoration: overline;
+  color: #0065fc;
+  background-color: none;
+  margin-top: 0px;
+}
 nav a:hover {
   color: blue;
 }
-/*bouton de recherche*/
-.bouton {
+/**********************bouton de recherche***************************/
+.barre_de_recherche {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -70,18 +84,23 @@ nav a:hover {
   align-items: center;
   border-radius: 20px;
 }
+
+  
+}
 .bouton {
   position: relative;
+  display: flex;
   top: 0px;
   left: 10px;
 }
 
-/*rubrique*/
+/*****************************rubrique*************************/
 .rubrique {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   font-size: 0.8em;
-  padding: 10px;
+  padding: 0px;
   margin-right: 0px;
 }
 p,
@@ -91,80 +110,116 @@ i {
 i {
   color: #0065fc;
   border: #f2f2f2;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 a em {
-  border: 1px solid #deebff;
+  border: 1px solid #f2f2f2;
   border-radius: 50px;
   width: 20px;
-  height: ;
+  height: 20px;
   background-color: #deebff;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rubrique a {
+  display: flex;
+  justify-content: flex-start;
+
   border: 2px solid #f2f2f2;
   padding: 5px;
   border-radius: 20px;
-  text-align: center; /*width*/
+  text-align: justify; /*width*/
   text-decoration: none;
   margin-right: 10px;
   color: black;
 }
 
-/*section hebergement et les plus populaires*/
+/*************************$*section hebergement et les plus populaires*******************************/
 section {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
-#hebergement {
-  background-color: yellow;
-  height: 700px;
-  width: 1200px;
+#hébergements {
+  background-color: #f2f2f2;
+  height: auto;
+  width: 800px;
 
   border: none;
 }
 section img {
   border: 1px solid white;
-  width: 233px;
-  height: 114px;
+  width: 100px;
+  height: 100px;
   margin-right: 26px;
-  padding: 26px;
-  padding-top: 0px;
-  padding-left: Opx;
+  padding: 0px 0px 30px 0px;
+  justify-content: ;
+  border-radius: 20px 20px;
 }
 
 #fig1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+h3 {
+  font-size: 0.5rem;
 }
 
 #les_plus_populaires {
-  background-color: aquamarine;
-  width: 418px;
+  background-color: #f2f2f2;
+  width: 300px;
 }
 
 #fig2 {
   display: flex;
   flex-direction: column;
 }
+.fa-star{
+  color:blue;
 
-/*activités a marseille*/
-#Activités_à_Marseille {
+}
+
+figure{
+  height:98px ;
+  width: 100%;
+}
+
+
+
+
+
+/*********************activités a marseille******************/
+
+#fig3 {
   display: flex;
-  height: 444px;
+  flex-direction: row;
+  max-width: 1200px;
 }
 
 div img {
-  width: 300px;
-  height: 161px;
+  width: 150px;
+  height: 100px;
 }
 
-/*footerrrrrrr*/
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
+/**************************footerrrrrrr*************************/
+.background {
   background-color: #f2f2f2;
+}
+
+#renseignements {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px 0;
 }
