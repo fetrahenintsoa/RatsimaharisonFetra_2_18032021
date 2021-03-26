@@ -41,11 +41,11 @@ p {
   font-size: 0.6em;
 }
 
-#container {
+/*#container {
   width: 100%;
-  max-width: 1400px;
-  max-height: 100vh;
-}
+  max-width: 1400px;*/
+  
+
 
 /**header**/
 #logo img {
@@ -355,11 +355,12 @@ aside .review{
   background: url(images/activities/fort-pomegues.jpg) center/cover;
   grid-area: b;
   
-  margin: 30px 0;
+  
 }
 .iles-frioul:nth-child(3) {
   background: url(images/activities/iles-frioul.jpg) center/cover;
   grid-area: c;
+  margin-top: 54px;
 }
 .parc-calanques:nth-child(4) {
   background: url(images/activities/parc-calanques.jpg) center/cover;
@@ -368,10 +369,27 @@ aside .review{
 .notre-dame:nth-child(5) {
   background: url(images/activities/notre-dame.jpg) center/cover;
   grid-area: e;
+  margin-bottom:54px;
 }
 .parc-longchamp:nth-child(6) {
   background: url(images/activities/parc-longchamp.jpg) center/cover;
   grid-area: f;
+  
+}
+
+/**************************footerrrrrrr*************************/
+.background {
+  background-color: #f2f2f2;
+}
+
+#renseignements {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  width: 100%;
+  
+  margin: 40px 0;
 }
 
 
@@ -531,17 +549,4 @@ div img {
   height: 100px;
 }
 
-/**************************footerrrrrrr*************************
-.background {
-  background-color: #f2f2f2;
-}
 
-#renseignements {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  background-color: #f2f2f2;
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px 0;
-}
