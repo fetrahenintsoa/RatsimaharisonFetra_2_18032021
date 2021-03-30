@@ -13,11 +13,14 @@ body {
 h1 {
   font-size: 1em;
   font-weight: bold;
+  
 }
 
 h2 {
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: bold;
+  position: relative;
+  
 }
 
 h3 {
@@ -38,6 +41,7 @@ a:hover {
 
 p {
   font-size: 0.6em;
+  
 }
 
 /*#container {
@@ -66,10 +70,10 @@ ul {
 }
 
 nav a {
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: black;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 nav a:hover {
   color: blue;
@@ -81,22 +85,32 @@ nav a:hover {
       margin-top: 0px;*/
 
 /*button*/
+#search-bar{
+ /* display: block;*/
 
+}
 form i {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px 0 0 20px;
-  background-color: #ccc;
+  color:black;
   width: 25px;
   height: 25px;
-  color: black;
-  font-size: 0.8em;
+  border: 1px solid #f2f2f2;
+  background-color:#f2f2f2;
+  font-size: 0.7em;
+  margin-left: 1px;
+  position:relative;
+  margin-right: -0.4em;
 }
 #text {
   height: 21px;
 
-  border: #f2f2f2;
+  border:1px solid #f2f2f2;
+  position:relative;
+  color:black;
+
 }
 
 #rechercher {
@@ -108,30 +122,16 @@ form i {
   height: 25px;
   padding-right: 70px;
   font-size: 0.7em;
+  position: absolute;
 }
 #rechercher:hover {
   cursor: pointer;
   border: none;
 }
 
-.search-button {
-  display: flex;
-  flex-direction: row;
-
-  width: 20px;
-  height: 18px;
-  align-items: center;
-  border-radius: 20px;
-}
-
-.bouton {
-  position: relative;
-  display: flex;
-  top: 0px;
-  left: 10px;
-}
 /**icone**/
 /**choice**/
+
 .choice {
   display: flex;
   flex-direction: row;
@@ -156,9 +156,10 @@ form i {
   margin-right: 30px;
   color: black;
   font-size: 1em;
-  
   background: none;
-  font-family: "Raleway";
+  position: relative;
+  
+  
 }
 
 .button i {
@@ -172,7 +173,10 @@ form i {
   border: 1px solid #f2f2f2;
   margin-right: 15px;
   background-color: #deebff;
+  transform: scale(1.2);
+  margin-left: -1.1em;
 }
+
 
 .button:hover {
   background-color: #0065fc;
@@ -181,13 +185,21 @@ form i {
 
 .info {
   padding-top: 10px;
+  
+
+  
+  
 }
 .info i {
-  padding-right: 4px;
+  /*display:flex;
+  justify-content: center;
+  align-items: center;*/
   border: 1px solid #f2f2f2;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  
 }
 
 /**MAIN SECTION**/
@@ -327,7 +339,7 @@ aside {
 }
 aside article {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 145px;
   background-color: white;
   border: 3px solid #f2f2f2;
@@ -367,24 +379,31 @@ aside .review {
 
 
 /***activieites new**/
+#titles{
+  margin-left: 70px;
+}
+
+
 .activities{
   max-width: 1300px;
-  width:80%;
-  margin:30px auto;
+  width:100%;
+  margin:30px;
   height: auto;
   display:grid;
   grid-template-columns: repeat(auto-fill,300px);
   justify-content: center;
-  grid-template-rows: repeat(auto-fill,223px);
+  grid-template-rows: repeat(2,200px);
   gap: 20px;
   grid-template-areas: 
      "a b d e "
      "a c d f";
+  flex-wrap: wrap;
+   
   
 }
 .vieux-port{
   grid-area: a;
-  ;
+  
   
   /*box-shadow: 0 0 3px rgba(0, 0green, Oblue, 0.8);*/
   /*justify-items: center;
@@ -395,9 +414,11 @@ aside .review {
    margin-bottom: 70px;
 
  } 
- .îles-frioul{
+ .iles-frioul{
    grid-area: c;
-   margin-top: 30px;
+   margin-top: 0px;
+   padding-top: 80px;
+   
   
    
  }
@@ -408,11 +429,13 @@ aside .review {
  }
  .notre-dame{
    grid-area: e;
-   margin-bottom: 60px;
+   padding-bottom: 50px;
+   
  }
  .parc-lonchamp{
    grid-area: f;
-   margin-top: 30px;
+   margin-top: 40px;
+   padding-bottom: 10px;
  }
  .activities-images{
    width: 100%;
@@ -452,6 +475,7 @@ aside .review {
   background-color: #f2f2f2;
 
   width: 100%;
+  min-width: 768px;
 }
 
 #à_propos {
@@ -508,6 +532,10 @@ aside .review {
     margin: 0;
     padding: 0;
   }
+}
+#footer{
+  display: flex;
+  flex-direction: row;
 }
  
 
