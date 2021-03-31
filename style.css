@@ -398,6 +398,8 @@ aside .review {
      "a b d e "
      "a c d f";
   flex-wrap: wrap;
+  position:relative;
+  padding-bottom: 65px;
    
   
 }
@@ -411,7 +413,7 @@ aside .review {
   }
  .fort-pomegues{
    grid-area: b;
-   margin-bottom: 70px;
+   
 
  } 
  .iles-frioul{
@@ -429,20 +431,21 @@ aside .review {
  }
  .notre-dame{
    grid-area: e;
-   padding-bottom: 50px;
+   padding-bottom: 80px;
    
  }
  .parc-lonchamp{
    grid-area: f;
    margin-top: 40px;
-   padding-bottom: 10px;
+   padding-top: -60px;
+   
  }
  .activities-images{
    width: 100%;
-   height: auto;
-   
-  display:block;
-  border-radius: 20px 20px 0 0;
+   height: 100%;
+   object-fit: cover;
+   display:block;
+   border-radius: 20px 20px 0 0;
  }
  .activities-content{
    padding:15px;
@@ -467,15 +470,16 @@ aside .review {
   justify-content: space-around;
   background-color: #f2f2f2;
 
-  padding-top: 52px;
-  padding-bottom: 55px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-  margin: 40px 0;
+  margin:  0;
 
   background-color: #f2f2f2;
 
   width: 100%;
   min-width: 768px;
+  position: absolute;
 }
 
 #à_propos {
