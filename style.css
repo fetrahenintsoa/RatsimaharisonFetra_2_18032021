@@ -543,10 +543,14 @@ aside .review {
 body{
   max-width: 576px;
   min-width: 200px;
-  padding: 0px 20px;
+  
   width: 100%;
+  padding: 0px 0px;
 }
 /********header******/
+header{
+  padding: 0px 20px;
+}
 #logo{
   max-width: 576px;
   min-width: 100px;
@@ -602,14 +606,60 @@ main{
   width:100%;
   margin: 0px 0px;
 }
-.accomodations{
+#accommodations{
   max-width: 576px;
   width:100%;
   padding:0px 0px;
-  display:flex;
+  margin:0px 0px;
   flex-direction: column-reverse;
+}
+aside{
+  border-radius: 0;
+  padding:0 0 0 0;
+  margin:0;
+  width:100%;
+}
+#popular{
+  text-align: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+#hosting-in-marseille{
+  border-radius: 0;
+  background-color:white;
+}
+#hosting-in-marseille h2, h3{
+  padding-top: 25px;
+  text-align:left;
+}
+a{
+  text-align: center;
+}
+/******ACTIVITIES MARSEILLE*******/
+.activities{
+  max-width: 576px;
+  width:100%;
+  display:grid;
+  grid-template-columns: 80%;
+  grid-template-rows: repeat (6,120px);
+  grid-template-areas: 
+  "a"
+  "b"
+  "c"
+  "d"
+  "e"
+  "f"
+  ;
+  
+  margin:0px;
+  
   
 }
+.activities-images{
+  height:125px;
+  
+}
+
 
 
 
