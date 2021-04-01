@@ -351,7 +351,7 @@ aside article {
   box-shadow: 3px 3px 10px #ccc;
   margin-bottom: 20px;
 }
-aside figure {
+ aside figure {
   width: 132px;
   height: 100%;
   margin: 0;
@@ -613,7 +613,7 @@ main{
   margin:0px 0px;
   flex-direction: column-reverse;
 }
-aside{
+#activities-in-marseille {
   border-radius: 0;
   padding:0 0 0 0;
   margin:0;
@@ -658,6 +658,23 @@ a{
 .activities-images{
   height:125px;
   
+}
+#renseignements{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: right;
+  padding:0px;
+  padding-left:20px;
+
+}
+#à_propos{
+  margin-left:0px;
+  margin-right: 0px;
+  padding-top: 40px;
+}
+#assistance{
+  padding-bottom: 20px;
 }
 
 
