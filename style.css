@@ -14,14 +14,12 @@ body {
 h1 {
   font-size: 1em;
   font-weight: bold;
-  
 }
 
 h2 {
   font-size: 1.1em;
   font-weight: bold;
   position: relative;
-  
 }
 
 h3 {
@@ -42,8 +40,6 @@ h4 {
 
 p {
   font-size: 0.6em;
-  
-  
 }
 
 /*#container {
@@ -78,14 +74,13 @@ nav a {
   margin-right: 40px;
 }
 nav a:hover {
-  color:#0065fc;
+  color: #0065fc;
 }
 /*ul strong {
       text-decoration: overline;
       color: #0065fc;
       background-color: none;
       margin-top: 0px;*/
-
 
 /*button*/
 
@@ -94,14 +89,14 @@ form i {
   justify-content: center;
   align-items: center;
   border-radius: 20px 0 0 20px;
-  color:black;
+  color: black;
   width: 25px;
   height: 10px;
   border: 1px solid #f2f2f2;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   font-size: 0.7em;
   margin-left: 1px;
-  position:relative;
+  position: relative;
   margin-right: -0.4em;
   padding: 6px 0px 7px 11px;
 }
@@ -109,10 +104,9 @@ form i {
 #text {
   height: 21px;
 
-  border:1px solid #f2f2f2;
-  position:relative;
-  color:black;
-
+  border: 1px solid #f2f2f2;
+  position: relative;
+  color: black;
 }
 
 #rechercher {
@@ -129,7 +123,6 @@ form i {
 #rechercher:hover {
   cursor: pointer;
   border: none;
- 
 }
 
 /**icone**/
@@ -161,12 +154,10 @@ form i {
   font-size: 1em;
   background: none;
   position: relative;
-  
-  
 }
 
 .button i {
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -180,7 +171,6 @@ form i {
   margin-left: -1.1em;
 }
 
-
 .button:hover {
   background-color: #0065fc;
   cursor: pointer;
@@ -188,10 +178,9 @@ form i {
 
 .info {
   padding-top: 10px;
- 
 }
 .info i {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #f2f2f2;
@@ -200,10 +189,8 @@ form i {
   height: 15px;
   margin-right: 20px;
   color: #0065fc;
-  margin: 0px 0px 0px 0Px;;
-  
+  margin: 0px 0px 0px 0px;
 }
-
 
 /**MAIN SECTION**/
 main {
@@ -342,7 +329,7 @@ aside {
 }
 aside article {
   display: flex;
- 
+
   width: 80%;
   height: 145px;
   background-color: white;
@@ -351,7 +338,7 @@ aside article {
   box-shadow: 3px 3px 10px #ccc;
   margin-bottom: 20px;
 }
- aside figure {
+aside figure {
   width: 132px;
   height: 100%;
   margin: 0;
@@ -381,155 +368,137 @@ aside .review {
   color: black;
 }
 
-
 /***activities new**/
-#titles{
+#titles {
   margin-left: 70px;
 }
 
-
-.activities{
+.activities {
   max-width: 1300px;
-  width:100%;
-  margin:30px;
+  width: 100%;
+  margin: 30px;
   height: auto;
-  display:grid;
-  grid-template-columns: repeat(auto-fill,300px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
   justify-content: center;
-  grid-template-rows: repeat(2,200px);
+  grid-template-rows: repeat(2, 200px);
   gap: 20px;
-  grid-template-areas: 
-     "a b d e "
-     "a c d f";
+  grid-template-areas:
+    "a b d e "
+    "a c d f";
   flex-wrap: wrap;
-  position:relative;
+  position: relative;
   padding-bottom: 65px;
-   
-  
 }
-.vieux-port{
+.vieux-port {
   grid-area: a;
-  
-  
+
   /*box-shadow: 0 0 3px rgba(0, 0green, Oblue, 0.8);*/
   /*justify-items: center;
   align-items: center;*/
-  }
- .fort-pomegues{
-   grid-area: b;
-   
-
- } 
- .iles-frioul{
-   grid-area: c;
-   margin-top: 0px;
-   padding-top: 80px;
-   
-  
-   
- }
- .parc-calanques{
-   grid-area: d;
-   height: 100%;
-  
- }
- .notre-dame{
-   grid-area: e;
-   padding-bottom: 80px;
-   
- }
- .parc-lonchamp{
-   grid-area: f;
-   margin-top: -5px;
-   
-   
- }
- .activities-images{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   display:block;
-   border-radius: 20px 20px 0 0;
- }
- .activities-content{
-   padding:15px;
-   background:royalblue;
-   border-radius: 0 0 20px 20px;
-   color:black;
-   background-color: white;
-   border:1px solid #f2f2f2;
-   box-shadow: 3px 3px 10px #ccc;
-   
-   }
-   .vieux-port:hover {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: inherit; 
-    opacity: 0.7;
-  } 
-  .fort-pomegues:hover {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: inherit; 
-    opacity: 0.7;
-  } 
-  .iles-frioul:hover {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: inherit; /***?***/
-    opacity: 0.7;
-  } 
-  .parc-calanques:hover {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: inherit; /***?***/
-    opacity: 0.7;
-  } 
-  .notre-dame:hover {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: inherit; /***?***/
-    opacity: 0.7;
-  } 
-  .parc-lonchamp:hover {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: inherit; /***?***/
-    opacity: 0.7;
-  } 
-
-
-
+}
+.fort-pomegues {
+  grid-area: b;
+}
+.iles-frioul {
+  grid-area: c;
+  margin-top: 0px;
+  padding-top: 80px;
+}
+.parc-calanques {
+  grid-area: d;
+  height: 100%;
+}
+.notre-dame {
+  grid-area: e;
+  padding-bottom: 80px;
+}
+.parc-lonchamp {
+  grid-area: f;
+  margin-top: -5px;
+}
+.activities-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.activities-content {
+  padding: 15px;
+  background: royalblue;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  background-color: white;
+  border: 1px solid #f2f2f2;
+  box-shadow: 3px 3px 10px #ccc;
+}
+.vieux-port:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  opacity: 0.7;
+}
+.fort-pomegues:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  opacity: 0.7;
+}
+.iles-frioul:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: inherit; /***?***/
+  opacity: 0.7;
+}
+.parc-calanques:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: inherit; /***?***/
+  opacity: 0.7;
+}
+.notre-dame:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: inherit; /***?***/
+  opacity: 0.7;
+}
+.parc-lonchamp:hover {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: inherit; /***?***/
+  opacity: 0.7;
+}
 
 /**************************footerrrrrrr*************************/
 
 #renseignements {
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content: flex-start;
   background-color: #f2f2f2;
   padding-top: 30px;
   padding-bottom: 30px;
-  
-  padding:20px 0 20px 80px;
+
+  padding: 20px 0 20px 80px;
   background-color: #f2f2f2;
   width: 100%;
   min-width: 768px;
   position: absolute;
-} 
+}
 
 #à_propos {
   margin-left: -30px;
   margin-right: 200px;
 }
 
-#nos_hébergements{
+#nos_hébergements {
   margin-right: 200px;
 }
 #assistance {
@@ -540,183 +509,270 @@ aside .review {
 
 @media all and (max-width: 576px) {
   /***** Code CSS à inclure *****/
-body{
-  max-width: 576px;
-  min-width: 200px;
-  
-  width: 100%;
-  padding: 0px 0px;
-}
-/********header******/
-header{
-  padding: 0px 20px;
-}
-#logo{
-  max-width: 576px;
-  min-width: 100px;
-  height: none;
-}
-h1 , p{
-  margin-right: 20px;
-}
-.titre_principal{
-  max-width: 576px;
-  display: flex;
-  flex-direction: column;
+  body {
+    max-width: 576px;
+    min-width: 200px;
+
+    width: 100%;
+    padding: 0px 0px;
+  }
+  /********header******/
+  header {
+    padding: 0px 20px;
+  }
+  #logo {
+    max-width: 576px;
+    min-width: 100px;
+    height: none;
+  }
+  h1,
+  p {
+    margin-right: 20px;
+  }
+  .titre_principal {
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .les_deux{
-  width:100%;
-  max-width: 576px;
-  display:flex;
-  justify-content:flex-end;
-  padding-left: 15px;
-  
-}
-.unique{
-  position: absolute;
-  top:20px;
-  right:10px;
- 
-}
-nav a:hover{
-  padding-bottom: 0px;
-  color: #0065fc;
-  border-bottom: 2px solid;
-  padding-bottom: 20px;
-  
-}
-#search-bar{
+  .les_deux {
+    width: 100%;
+    max-width: 576px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-shrink: none;
+    padding-right: 0 30px 0 0pxs;
+    padding-left: 5px;
+  }
+  .unique {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  nav a:hover {
+    padding-bottom: 0px;
+    color: #0065fc;
+    border-bottom: 2px solid;
+    padding-bottom: 20px;
+  }
+  #search-bar {
   }
 
-.choice{
-  display: flex;
-  flex-direction: column;
- }
- .the-choices{
-   display:flex;
-   flex-direction:row;
-   flex-wrap: wrap;
-   row-gap: 10px;
-   padding: 0px 0px;
-}
-/*******MAIN********/
-main{
-  max-width: 576px;
-  width:100%;
-  margin: 0px 0px;
-}
-#accommodations{
-  max-width: 576px;
-  width:100%;
-  padding:0px 0px;
-  margin:0px 0px;
-  flex-direction: column-reverse;
-}
-#activities-in-marseille {
-  border-radius: 0;
-  padding:0 0 0 0;
-  margin:0;
-  width:100%;
-}
-#popular{
-  text-align: center;
-  justify-content: center;
-  padding-left: 40px;
-}
-#hosting-in-marseille{
-  border-radius: 0;
-  background-color:white;
-}
-#hosting-in-marseille h2, h3{
-  padding-top: 25px;
-  text-align:left;
-}
-a{
-  text-align: center;
-}
-/******ACTIVITIES MARSEILLE*******/
-.activities{
-  max-width: 576px;
-  width:100%;
-  display:grid;
-  grid-template-columns: 80%;
-  grid-template-rows: repeat (6,120px);
-  grid-template-areas: 
-  "a"
-  "b"
-  "c"
-  "d"
-  "e"
-  "f"
-  ;
-  
-  margin:0px;
-  
-  
-}
-.activities-images{
-  height:125px;
-  
-}
-#renseignements{
-  width:100%;
-  display:flex;
-  flex-direction: column;
-  justify-content: right;
-  padding:0px;
-  padding-left:20px;
+  .choice {
+    display: flex;
+    flex-direction: column;
+  }
+  .the-choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 0px 0px;
+  }
+  /*******MAIN********/
+  main {
+    max-width: 576px;
+    width: 100%;
+    margin: 0px 0px;
+  }
+  #accommodations {
+    max-width: 576px;
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    flex-direction: column-reverse;
+  }
 
+  #popular {
+    text-align: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  aside article {
+    flex-shrink: none;
+  }
+  aside {
+    padding: 0;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+  }
+  #hosting-in-marseille article {
+    width: 360px;
+  }
+  #hosting-in-marseille {
+    border-radius: 0;
+    background-color: white;
+  }
+  #hosting-in-marseille h2,
+  h3 {
+    padding-top: 25px;
+    text-align: left;
+  }
+  a {
+    text-align: center;
+  }
+  h4 {
+    text-align: start;
+  }
+  #hotels p {
+    text-align: start;
+  }
+
+  /******ACTIVITIES MARSEILLE*******/
+  #activities-in-marseille {
+    border-radius: 0;
+    padding: 0 0 0 0;
+    margin: 0;
+    width: 100%;
+  }
+  .activities {
+    max-width: 576px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat (6, 120px);
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+
+    margin: 0px;
+  }
+  .activities-images {
+    height: 125px;
+  }
+  #renseignements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  #à_propos {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 40px;
+  }
+  #assistance {
+    padding-bottom: 20px;
+  }
+  .notre-dame {
+    padding-bottom: 0;
+  }
+  .iles-frioul {
+    padding-top: 0;
+  }
 }
-#à_propos{
-  margin-left:0px;
-  margin-right: 0px;
-  padding-top: 40px;
-}
-#assistance{
-  padding-bottom: 20px;
-}
-
-
-
-
-
-}
-
-
-
-
 
 /**SMALL DEVICES -TABLET**/
 @media all and (min-width: 577px) and (max-width: 768px) {
-
-/***** Code CSS à inclure *****/}
+  /***** Code CSS à inclure *****/
+}
 
 /**MEDIUM DEVICES**/
 
 @media all and (min-width: 769px) and (max-width: 992px) {
-
-***** Code CSS à inclure *****/}
+  /***** Code CSS à inclure *****/
+}
 /**LARGE DEVICES**/
 @media all and (min-width: 993px) and (max-width: 1200px) {
+  /*******header**********/
+  .titre_principal {
+    padding-top: 10px;
+  }
+  nav a:hover {
+    border-top: 2px solid;
+    padding-top: 13px;
+  }
 
-  
+  .les_trois {
+    margin-right: 0;
+  }
 
+  /******main******/
+  #accommodations {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #hosting-in-marseille {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
 
+  /******les plus populaires******/
+  aside {
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+  }
 
-  
+  #popular {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  #title {
+    padding-right: 25px;
+  }
+  #aside article {
+    width: 200px;
+  }
+  #popular {
+    width: 300px;
+  }
 
-
-  
-
-
-
-
-
-  
-
- 
-
-  
-
-  
+  /*****activités a marseille*******/
+  #activities-in-marseille {
+    max-width: 1200px;
+    width: 100%;
+  }
+  .activities {
+    max-width: 1200px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas:
+      "a b c"
+      "d e f";
+    gap: 50px;
+    row-gap: 100px;
+    margin-bottom: 20px;
+  }
+  .iles-frioul {
+    padding-top: 0;
+  }
+  .notre-dame {
+    padding-bottom: 0;
+  }
+  .activities-content {
+    padding: 10px;
+  }
+  /*******renseignements**********/
+  #renseignements {
+    width: 100%;
+  }
+  .background {
+    width: 100%;
+    background-color: #deebff;
+  }
+}
+@media all and (min-width: 1201px) {
+  #accomodations {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
