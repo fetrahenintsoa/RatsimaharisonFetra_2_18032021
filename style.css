@@ -4,6 +4,7 @@
   font-family: "Raleway";
   src: url(fonts/Raleway-Light.ttf);
 }
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
 
 body {
   font-family: "Raleway", sans-serif;
@@ -33,14 +34,15 @@ h4 {
   font-weight: bold;
 }
 
-a:hover {
-  padding-top: 30px;
+/*a:hover {
+  padding-top: 10px;
   color: #0065fc;
   border-top: 2px solid;
-}
+}*/
 
 p {
   font-size: 0.6em;
+  
   
 }
 
@@ -61,7 +63,7 @@ p {
   justify-content: space-between;
 }
 /**nav**/
-ul {
+.les_trois {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
@@ -76,7 +78,7 @@ nav a {
   margin-right: 40px;
 }
 nav a:hover {
-  color: blue;
+  color:#0065fc;
 }
 /*ul strong {
       text-decoration: overline;
@@ -84,11 +86,9 @@ nav a:hover {
       background-color: none;
       margin-top: 0px;*/
 
-/*button*/
-#search-bar{
- /* display: block;*/
 
-}
+/*button*/
+
 form i {
   display: flex;
   justify-content: center;
@@ -96,14 +96,16 @@ form i {
   border-radius: 20px 0 0 20px;
   color:black;
   width: 25px;
-  height: 25px;
+  height: 10px;
   border: 1px solid #f2f2f2;
   background-color:#f2f2f2;
   font-size: 0.7em;
   margin-left: 1px;
   position:relative;
   margin-right: -0.4em;
+  padding: 6px 0px 7px 11px;
 }
+
 #text {
   height: 21px;
 
@@ -127,6 +129,7 @@ form i {
 #rechercher:hover {
   cursor: pointer;
   border: none;
+ 
 }
 
 /**icone**/
@@ -185,22 +188,22 @@ form i {
 
 .info {
   padding-top: 10px;
-  
-
-  
-  
+ 
 }
 .info i {
-  /*display:flex;
+  display:flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
   width: 15px;
   height: 15px;
   margin-right: 20px;
+  color: #0065fc;
+  margin: 0px 0px 0px 0Px;;
   
 }
+
 
 /**MAIN SECTION**/
 main {
@@ -339,6 +342,7 @@ aside {
 }
 aside article {
   display: flex;
+ 
   width: 80%;
   height: 145px;
   background-color: white;
@@ -378,7 +382,7 @@ aside .review {
 }
 
 
-/***activieites new**/
+/***activities new**/
 #titles{
   margin-left: 70px;
 }
@@ -436,8 +440,8 @@ aside .review {
  }
  .parc-lonchamp{
    grid-area: f;
-   margin-top: 40px;
-   padding-top: -60px;
+   margin-top: -5px;
+   
    
  }
  .activities-images{
@@ -455,6 +459,7 @@ aside .review {
    background-color: white;
    border:1px solid #f2f2f2;
    box-shadow: 3px 3px 10px #ccc;
+   
    }
    .vieux-port:hover {
     text-decoration: none;
@@ -531,59 +536,102 @@ aside .review {
   /*padding-right: 389px;*/
 }
 /***********RESPONSIVE***********/
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  #hosting-in-marseille {
-    margin-left: 0;
-  }
-  h3 {
-    margin-bottom: 25px;
-  }
-  /**popular**/
-  #popular {
-    align-items: center;
-  }
-  main {
-    align-items: center;
-    padding-left: 0;
-  }
-  #titre_hébergements {
-    margin-bottom: 10px;
-    margin-top: 50px;
-  }
+/**X-SMALL DEVICES -MOBILE**/
 
-  /***footer**/
-  .background {
-    max-width: 100%;
-    display: block;
-  }
-  #à_propos {
-    padding-left: 0;
-  }
-  #assistance {
-    padding-right: 0;
-  }
-
-  /******tablette******/
-  
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /**Accommodations section**/
-  #hotels{
-    display:none;
-    flex-direction: column-reverse;
-  }
-
-  #accommodations {
-    
-    
-    margin: 0;
-    padding: 0;
-  }
+@media all and (max-width: 576px) {
+  /***** Code CSS à inclure *****/
+body{
+  max-width: 576px;
+  min-width: 200px;
+  padding: 0px 20px;
+  width: 100%;
 }
-#footer{
+/********header******/
+#logo{
+  max-width: 576px;
+  min-width: 100px;
+  height: none;
+}
+h1 , p{
+  margin-right: 20px;
+}
+.titre_principal{
+  max-width: 576px;
   display: flex;
   flex-direction: column;
+  }
+
+  .les_deux{
+  width:100%;
+  max-width: 576px;
+  display:flex;
+  justify-content:flex-end;
+  padding-left: 15px;
+  
 }
+.unique{
+  position: absolute;
+  top:20px;
+  right:10px;
  
+}
+nav a:hover{
+  padding-bottom: 0px;
+  color: #0065fc;
+  border-bottom: 2px solid;
+  padding-bottom: 20px;
+  
+}
+#search-bar{
+  }
+
+.choice{
+  display: flex;
+  flex-direction: column;
+ }
+ .the-choices{
+   display:flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   row-gap: 10px;
+   padding: 0px 0px;
+}
+/*******MAIN********/
+main{
+  max-width: 576px;
+  width:100%;
+  margin: 0px 0px;
+}
+.accomodations{
+  max-width: 576px;
+  width:100%;
+  padding:0px 0px;
+  display:flex;
+  flex-direction: column-reverse;
+  
+}
+
+
+
+
+}
+
+
+
+
+
+/**SMALL DEVICES -TABLET**/
+@media all and (min-width: 577px) and (max-width: 768px) {
+
+/***** Code CSS à inclure *****/}
+
+/**MEDIUM DEVICES**/
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+***** Code CSS à inclure *****/}
+/**LARGE DEVICES**/
+@media all and (min-width: 993px) and (max-width: 1200px) {
 
   
 
