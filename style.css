@@ -723,10 +723,22 @@ aside .review {
       "a b"
       "c d"
       "e f";
-    padding-bottom: 300px;
+    padding-bottom: 500px;
+    justify-content: left;
+    column-gap: 30px;
+    row-gap: 100px;
   }
+
+  .notre-dame {
+    padding-bottom: 0;
+  }
+  .iles-frioul {
+    padding-top: 0;
+  }
+  /*****footer****/
   #renseignements {
     width: 100%;
+    max-width: 768px;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -736,16 +748,10 @@ aside .review {
   #à_propos {
     margin-left: 0px;
     margin-right: 0px;
-    padding-top: 40px;
+    padding-top: 0px;
   }
   #assistance {
     padding-bottom: 20px;
-  }
-  .notre-dame {
-    padding-bottom: 0;
-  }
-  .iles-frioul {
-    padding-top: 0;
   }
 }
 
@@ -753,6 +759,58 @@ aside .review {
 
 @media all and (min-width: 769px) and (max-width: 992px) {
   /***** Code CSS à inclure *****/
+  .les_trois {
+    margin-right: 0;
+  }
+  #accommodations {
+    flex-direction: column;
+    padding: 0;
+  }
+  #hosting-in-marseille h2 {
+    padding-top: 15px;
+  }
+  aside {
+    margin-left: 0;
+  }
+  #popular {
+    margin-left: 70px;
+  }
+  /******activites à marseille*****/
+  .activities {
+    max-width: 992px;
+    width: 100%;
+    margin: 20px 20px;
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: repeat(3, 134px);
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+    padding-bottom: 500px;
+
+    column-gap: 30px;
+    row-gap: 100px;
+  }
+  .iles-frioul {
+    padding-top: 0;
+  }
+  .notre-dame {
+    padding-bottom: 0;
+  }
+  /*footer*****/
+  #renseignements {
+    max-width: 992px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  #à_propos {
+    margin-right: 100px;
+  }
+  #nos_hébergements {
+    margin-right: 100px;
+  }
 }
 /**LARGE DEVICES**/
 @media all and (min-width: 993px) and (max-width: 1200px) {
