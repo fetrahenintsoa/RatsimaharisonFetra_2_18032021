@@ -674,6 +674,79 @@ aside .review {
 /**SMALL DEVICES -TABLET**/
 @media all and (min-width: 577px) and (max-width: 768px) {
   /***** Code CSS à inclure *****/
+  /******header*******/
+  body {
+    margin: 0;
+    padding: 0 20px;
+    height: auto;
+  }
+  header {
+    padding: 0 20px;
+  }
+  .les_trois {
+    margin-right: 0;
+  }
+  .the-choices {
+    max-width: 768px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  /*******main********/
+  #accommodations {
+    width: 100%;
+    max-width: 768px;
+    padding: 0;
+    flex-direction: column;
+  }
+  #hosting-in-marseille {
+    border-radius: 0;
+    padding-top: 15px;
+  }
+  aside {
+    border-radius: 0;
+    margin-left: 0;
+  }
+  #popular {
+    padding-left: 50px;
+    width: 100%;
+  }
+  /********Activités à marseille*******/
+  .activities {
+    max-width: 768px;
+    width: 100%;
+    margin: 20px 20px;
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: repeat(3, 134px);
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+    padding-bottom: 300px;
+  }
+  #renseignements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  #à_propos {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 40px;
+  }
+  #assistance {
+    padding-bottom: 20px;
+  }
+  .notre-dame {
+    padding-bottom: 0;
+  }
+  .iles-frioul {
+    padding-top: 0;
+  }
 }
 
 /**MEDIUM DEVICES**/
