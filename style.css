@@ -124,6 +124,23 @@ form i {
   cursor: pointer;
   border: none;
 }
+.button-loupe {
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #0065fc;
+  border: none;
+  cursor: pointer;
+
+  /*left: 240px;*/
+}
+.button-loupe i {
+  border: none;
+  background-color: #0065fc;
+  color: #ccc;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: -10px;
+}
 
 /**icone**/
 /**choice**/
@@ -189,7 +206,7 @@ form i {
   height: 15px;
   margin-right: 20px;
   color: #0065fc;
-  margin: 0px 0px 0px 0px;
+  margin-right: 0px;
 }
 
 /**MAIN SECTION**/
@@ -204,7 +221,7 @@ main {
 #accommodations {
   display: flex;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 0px;
 }
 
 #hosting-in-marseille {
@@ -539,24 +556,46 @@ aside .review {
     width: 100%;
     max-width: 576px;
     display: flex;
-    flex-direction: row;
     text-align: center;
-    flex-shrink: none;
-    padding-right: 0 30px 0 0pxs;
-    padding-left: 5px;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 0;
+  }
+  .les_trois {
+    margin-right: 0;
+    padding-top: 0;
   }
   .unique {
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 20px;
+    color: #0065fc;
+  }
+  .unique a {
+    color: #0065fc;
+    font-weight: 700;
+  }
+  .unique a:hover {
+    border-style: none;
   }
   nav a:hover {
-    padding-bottom: 0px;
     color: #0065fc;
-    border-bottom: 2px solid;
-    padding-bottom: 20px;
+    border-bottom: 2px solid #0065fc;
+
+    border-top: none;
+  }
+  nav a {
+    margin-right: 0px;
+    padding: 0 55px 15px 55px;
   }
   #search-bar {
+  }
+  .button-loupe {
+    display: contents;
+  }
+
+  #rechercher {
+    display: none;
   }
 
   .choice {
