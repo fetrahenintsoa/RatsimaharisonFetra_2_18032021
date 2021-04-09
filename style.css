@@ -8,24 +8,16 @@
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100%;
-}
+
 body {
   min-height: 100%;
   margin: 0 50px 0 50px;
   font-family: "Raleway", sans-serif;
   margin: auto;
   padding: 0 40px;
-
   font-size: 1rem;
-  overflow-x: hidden;
-  position: relative;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-}
+
 h1 {
   font-size: 1.2rem;
 }
@@ -33,7 +25,7 @@ h1 {
 h2 {
   font-size: 1.1rem;
   font-weight: bold;
-  position: relative;
+
   padding-top: 35px;
 }
 
@@ -50,12 +42,6 @@ footer p {
   line-height: 1.8;
   font-weight: 100;
 }
-
-/*a:hover {
-  padding-top: 10px;
-  color: #0065fc;
-  border-top: 2px solid;
-}*/
 
 h1 + p {
   font-size: 0.9rem;
@@ -506,59 +492,44 @@ aside .review {
   text-decoration: none;
   border: none;
   padding: 0;
-  color: inherit; /***?***/
+  color: inherit;
   opacity: 0.7;
 }
 .parc-calanques:hover {
   text-decoration: none;
   border: none;
   padding: 0;
-  color: inherit; /***?***/
+  color: inherit;
   opacity: 0.7;
 }
 .notre-dame:hover {
   text-decoration: none;
   border: none;
   padding: 0;
-  color: inherit; /***?***/
+  color: inherit;
   opacity: 0.7;
 }
 .parc-lonchamp:hover {
   text-decoration: none;
   border: none;
   padding: 0;
-  color: inherit; /***?***/
+  color: inherit;
   opacity: 0.7;
 }
 
 /**************************footerrrrrrr*************************/
 
-#renseignements {
+.footer {
+  padding: 50px;
+  background-color: #f2f2f2;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: #f2f2f2;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  padding: 20px 0 20px 80px;
-  background-color: #f2f2f2;
-  width: 100%;
-  min-width: 768px;
-  position: absolute;
+  
 }
 
-#à_propos {
-  margin-left: -30px;
-  margin-right: 200px;
+.footer > div {
+  flex-grow: 1;
 }
 
-#nos_hébergements {
-  margin-right: 200px;
-}
-#assistance {
-  padding-right: 389px;
-}
 /***********RESPONSIVE***********/
 /**X-SMALL DEVICES -MOBILE**/
 
@@ -636,8 +607,7 @@ aside .review {
     margin-right: 0px;
     padding: 0 55px 15px 55px;
   }
-  #search-bar {
-  }
+  
   .button-loupe {
     display: contents;
   }
@@ -679,7 +649,6 @@ aside .review {
   #popular {
     text-align: center;
     justify-content: center;
-    margin-left: ;
   }
   article p {
     padding: 5px;
@@ -802,34 +771,26 @@ aside .review {
     padding-top: 60px;
   }
 
-  body {
-    padding-bottom: 1000px;
-  }
-  #renseignements {
-    display: flex;
+  .footer {
     flex-direction: column;
-    justify-content: right;
-    padding: 0px;
-    padding-left: 20px;
-    max-width: 576px;
-    position: absolute;
-    height: 489px;
-    line-height: 2rem;
+    padding: 0 30px 30px 30px;
+    
+   
   }
   .background h2 {
     padding-bottom: 20px;
     padding-top: 15px;
   }
-  .background h2 p {
+  .footer h2 {
+    margin-top: 30px;
+} 
+  body{
+    padding-bottom: 1000px;
+    box-sizing: border-box;
   }
-  #à_propos {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 40px;
-  }
-  #assistance {
-    padding-bottom: 20px;
-  }
+  
+
+ 
   .notre-dame {
     padding-bottom: 0;
   }
@@ -910,22 +871,13 @@ aside .review {
   }
   /*****footer****/
   #renseignements {
-    width: 100%;
-    max-width: 768px;
+    
     display: flex;
     flex-direction: column;
     justify-content: right;
-    padding: 0px;
-    padding-left: 20px;
+  
   }
-  #à_propos {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 0px;
-  }
-  #assistance {
-    padding-bottom: 20px;
-  }
+  
 }
 
 /**MEDIUM DEVICES**/
@@ -975,17 +927,10 @@ aside .review {
     padding-bottom: 0;
   }
   /*footer*****/
-  #renseignements {
-    max-width: 992px;
-    width: 100%;
-    justify-content: flex-start;
-  }
-  #à_propos {
-    margin-right: 100px;
-  }
-  #nos_hébergements {
-    margin-right: 100px;
-  }
+  
+    
+    
+ 
 }
 /**LARGE DEVICES**/
 @media all and (min-width: 993px) and (max-width: 1200px) {
@@ -997,10 +942,6 @@ aside .review {
   }
   .titre_principal {
     padding-top: 10px;
-  }
-  nav a:hover {
-    border-top: 2px solid;
-    padding-top: 13px;
   }
 
   .les_trois {
@@ -1074,12 +1015,8 @@ aside .review {
   }
   /*******renseignements**********/
   #renseignements {
-    width: 100%;
-  }
-  .background {
-    width: 100%;
-    background-color: #deebff;
-  }
+ 
+  
 }
 @media all and (min-width: 1201px) {
   body {
