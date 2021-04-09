@@ -2,33 +2,39 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url(fonts/Raleway-Light.ttf);
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 }
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  margin: 0 50px 0 50px;
   font-family: "Raleway", sans-serif;
   margin: auto;
   padding: 0 40px;
+
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 h1 {
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: bold;
   position: relative;
+  padding-top: 35px;
 }
 
 h3 {
-  font-size: 0.7em;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 0.6em;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -38,8 +44,10 @@ h4 {
   border-top: 2px solid;
 }*/
 
-p {
-  font-size: 0.6em;
+h1 + p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  font-weight: 100;
 }
 
 /*#container {
@@ -48,9 +56,9 @@ p {
 
 /**header**/
 #logo img {
-  width: 70px;
-  height: 30px;
-  padding: 20px 0;
+  width: 95px;
+  height: 45px;
+  padding: 40px 0;
 }
 
 .titre_principal {
@@ -63,18 +71,20 @@ p {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin-right: 77px;
-  padding-top: 20px;
+  margin: 0 30px 0 30px;
+  padding-top: 50px;
 }
 
 nav a {
-  font-size: 0.8em;
   color: black;
   text-decoration: none;
   margin-right: 40px;
+  text-align: center;
 }
 nav a:hover {
   color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 48px;
 }
 /*ul strong {
       text-decoration: overline;
@@ -88,37 +98,43 @@ form i {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px 0 0 20px;
+  border-radius: 15px 0 0 15px;
   color: black;
-  width: 25px;
+  width: 5px;
   height: 10px;
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
-  font-size: 0.7em;
-  margin-left: 1px;
-  position: relative;
+
   margin-right: -0.4em;
-  padding: 6px 0px 7px 11px;
+  padding: 20px;
+  font-size: 0.9rem;
+  position: absolute;
 }
 
 #text {
-  height: 21px;
-
   border: 1px solid #f2f2f2;
-  position: relative;
+  font-size: 1rem;
   color: black;
+  padding: 15px;
+  margin-left: 45px;
+  font-weight: 700;
+}
+#text ::placeholder {
+  opacity: 1;
 }
 
 #rechercher {
   background: #0065fc;
   color: white;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 10px 10px 0;
   border: none;
   width: 25px;
   height: 25px;
-  padding-right: 70px;
-  font-size: 0.7em;
-  position: absolute;
+  padding: 15px 94px 37px 10px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
 }
 #rechercher:hover {
   cursor: pointer;
@@ -126,20 +142,22 @@ form i {
 }
 .button-loupe {
   display: none;
-  position: absolute;
   border-radius: 20px;
   background-color: #0065fc;
   border: none;
   cursor: pointer;
-
-  /*left: 240px;*/
+  position: absolute;
 }
 .button-loupe i {
   border: none;
   background-color: #0065fc;
-  color: #ccc;
-  border-radius: 10px 10px 10px 10px;
-  margin-left: -10px;
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: -30px;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 20px;
+  font-size: 1.1rem;
 }
 
 /**icone**/
@@ -152,6 +170,7 @@ form i {
   font-weight: 700;
   max-width: 100%;
   padding-top: 15px;
+  align-items: baseline;
 }
 .the-choices {
   display: flex;
@@ -162,15 +181,18 @@ form i {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #f2f2f2;
-  padding-right: 20px;
-  border-radius: 20px;
+  border: 3px solid #f2f2f2;
+  padding: 5px;
+  padding-right: 15px;
+  border-radius: 25px 25px 25px 25px;
   text-decoration: none;
-  margin-right: 30px;
+  margin: 15px;
   color: black;
-  font-size: 1em;
+  font-size: 1rem;
   background: none;
-  position: relative;
+
+  font-weight: 700;
+  font-family: "Raleway";
 }
 
 .button i {
@@ -179,13 +201,13 @@ form i {
   align-items: center;
   border-radius: 50%;
   color: #0065fc;
-  width: 25px;
-  height: 25px;
+  width: 39px;
+  height: 39px;
   border: 1px solid #f2f2f2;
   margin-right: 15px;
   background-color: #deebff;
-  transform: scale(1.2);
-  margin-left: -1.1em;
+  transform: scale(1.3);
+  margin-left: -0.5em;
 }
 
 .button:hover {
@@ -195,24 +217,31 @@ form i {
 
 .info {
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px 0;
 }
 .info i {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   margin-right: 20px;
   color: #0065fc;
   margin-right: 0px;
+  cursor: pointer;
+  margin-right: 16px;
+  font-size: 0.7rem;
 }
 
 /**MAIN SECTION**/
 main {
   width: 100%;
-  margin: auto;
+  /*new today08*/
+
   padding-top: 10px;
 }
 
@@ -228,7 +257,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 3; /*je sais pas*/
+  flex: 3;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 0;
@@ -280,6 +309,7 @@ article h4 {
 article p {
   padding: 0 0 0 10px;
   margin: 5px 0 0 0;
+  font-size: 0.7rem;
 }
 
 #hosting-in-marseille article figure {
@@ -294,6 +324,8 @@ article figure img {
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0;
+}
+article h4 {
 }
 .review {
   display: flex;
@@ -346,7 +378,6 @@ aside {
 }
 aside article {
   display: flex;
-
   width: 80%;
   height: 145px;
   background-color: white;
@@ -364,7 +395,7 @@ aside figure {
 
 aside figure img {
   object-fit: cover; /****/
-  width: 100%;
+  width: 120px;
   height: 100%;
   border-radius: 20px 0 0 20px;
 }
@@ -378,7 +409,7 @@ aside figure img {
 aside .review {
   display: flex;
   position: absolute;
-  top: 90px;
+  top: 120px;
 }
 #popular a {
   text-decoration: none;
@@ -391,9 +422,6 @@ aside .review {
 }
 
 .activities {
-  max-width: 1300px;
-  width: 100%;
-  margin: 30px;
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
@@ -409,10 +437,6 @@ aside .review {
 }
 .vieux-port {
   grid-area: a;
-
-  /*box-shadow: 0 0 3px rgba(0, 0green, Oblue, 0.8);*/
-  /*justify-items: center;
-  align-items: center;*/
 }
 .fort-pomegues {
   grid-area: b;
@@ -519,7 +543,7 @@ aside .review {
   margin-right: 200px;
 }
 #assistance {
-  /*padding-right: 389px;*/
+  padding-right: 389px;
 }
 /***********RESPONSIVE***********/
 /**X-SMALL DEVICES -MOBILE**/
@@ -527,11 +551,8 @@ aside .review {
 @media all and (max-width: 576px) {
   /***** Code CSS à inclure *****/
   body {
-    max-width: 576px;
-    min-width: 200px;
-
-    width: 100%;
     padding: 0px 0px;
+    overflow-x: hidden;
   }
   /********header******/
   header {
@@ -542,9 +563,13 @@ aside .review {
     min-width: 100px;
     height: none;
   }
-  h1,
-  p {
-    margin-right: 20px;
+  h1 {
+    margin-right: 0px;
+    line-height: 1.3rem;
+    padding-bottom: 22px;
+  }
+  h1 + p {
+    padding-bottom: 37px;
   }
   .titre_principal {
     max-width: 576px;
@@ -558,8 +583,16 @@ aside .review {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    padding: 5px;
-    margin: 0;
+    padding-bottom: 42px;
+  }
+  .les_deux a {
+    padding: 0 55px 15px 55px;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  .les_deux a :hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
   }
   .les_trois {
     margin-right: 0;
@@ -567,8 +600,8 @@ aside .review {
   }
   .unique {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 60px;
+    right: -10px;
     color: #0065fc;
   }
   .unique a {
@@ -583,6 +616,7 @@ aside .review {
     border-bottom: 2px solid #0065fc;
 
     border-top: none;
+    padding-top: 0;
   }
   nav a {
     margin-right: 0px;
@@ -597,7 +631,9 @@ aside .review {
   #rechercher {
     display: none;
   }
-
+  .choice h2 {
+    padding-bottom: 16px;
+  }
   .choice {
     display: flex;
     flex-direction: column;
@@ -606,13 +642,13 @@ aside .review {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 10px;
-    padding: 0px 0px;
+    padding: 0;
+  }
+  .button {
+    margin: 5px;
   }
   /*******MAIN********/
   main {
-    max-width: 576px;
-    width: 100%;
     margin: 0px 0px;
   }
   #accommodations {
@@ -623,32 +659,55 @@ aside .review {
     flex-direction: column-reverse;
   }
 
+  #title h2 {
+    padding-bottom: 30px;
+  }
   #popular {
     text-align: center;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: ;
+  }
+  article p {
+    padding: 5px;
+    text-align: start;
+    margin-left: 5px;
+  }
+  article h4 {
+    margin-top: 20px;
   }
 
   aside article {
-    flex-shrink: none;
+    width: 95%;
+  }
+  aside figure img {
+    width: 130px;
   }
   aside {
     padding: 0;
+    padding-bottom: 35px;
     width: 100%;
     border-radius: 0px;
     margin: 0;
   }
   #hosting-in-marseille article {
-    width: 360px;
+    width: 325px;
+    height: 192px;
   }
   #hosting-in-marseille {
     border-radius: 0;
     background-color: white;
   }
-  #hosting-in-marseille h2,
-  h3 {
-    padding-top: 25px;
+  #hosting-in-marseille h2 {
+    padding-top: 42px;
+    padding-left: 20px;
+    padding-bottom: 24px;
     text-align: left;
+  }
+  article figure img {
+    height: 113px;
+  }
+  article h4 {
+    margin-top: 5px;
   }
   a {
     text-align: center;
@@ -661,15 +720,20 @@ aside .review {
   }
 
   /******ACTIVITIES MARSEILLE*******/
+
+  #titles {
+    margin-left: 40px;
+    padding-bottom: 30px;
+  }
   #activities-in-marseille {
     border-radius: 0;
     padding: 0 0 0 0;
     margin: 0;
-    width: 100%;
   }
   .activities {
     max-width: 576px;
     width: 100%;
+    height: 190px;
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: repeat (6, 120px);
@@ -681,18 +745,44 @@ aside .review {
       "e"
       "f";
 
-    margin: 0px;
+    margin: 0;
   }
   .activities-images {
-    height: 125px;
+    height: 135px;
+    width: 335px;
+  }
+  .activities-content {
+    position: absolute;
+    width: 304px;
+    padding-top: 10px;
+  }
+  .vieux-port {
+    grid-area: a;
+  }
+  .fort-pomegues {
+    grid-area: b;
+    padding-top: 0px;
+  }
+  .iles-frioul {
+    grid-area: c;
+  }
+  .parc-calanques {
+    grid-area: d;
+    padding-top: 40px;
+  }
+  .notre-dame {
+    grid-area: e;
+  }
+  .parc-lonchamp {
+    grid-area: f;
   }
   #renseignements {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: right;
     padding: 0px;
     padding-left: 20px;
+    max-width: 576px;
   }
   #à_propos {
     margin-left: 0px;
@@ -712,8 +802,14 @@ aside .review {
 
 /**SMALL DEVICES -TABLET**/
 @media all and (min-width: 577px) and (max-width: 768px) {
-  /***** Code CSS à inclure *****/
   /******header*******/
+  .header {
+    margin: 0 30px 0 30px;
+    overflow-x: hidden;
+  }
+  .main {
+    /*emargin: 0 30px 0 30px;*/
+  }
   body {
     margin: 0;
     padding: 0 20px;
@@ -797,7 +893,9 @@ aside .review {
 /**MEDIUM DEVICES**/
 
 @media all and (min-width: 769px) and (max-width: 992px) {
-  /***** Code CSS à inclure *****/
+  body {
+    overflow-x: hidden;
+  }
   .les_trois {
     margin-right: 0;
   }
@@ -854,6 +952,11 @@ aside .review {
 /**LARGE DEVICES**/
 @media all and (min-width: 993px) and (max-width: 1200px) {
   /*******header**********/
+
+  body {
+    width: 1200;
+    overflow-x: hidden;
+  }
   .titre_principal {
     padding-top: 10px;
   }
@@ -941,6 +1044,10 @@ aside .review {
   }
 }
 @media all and (min-width: 1201px) {
+  body {
+    margin: auto;
+    overflow-x: hidden;
+  }
   #accomodations {
     padding-left: 0;
     justify-content: center;
