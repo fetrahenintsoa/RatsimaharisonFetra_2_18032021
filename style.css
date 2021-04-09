@@ -8,7 +8,11 @@
   margin: 0;
   padding: 0;
 }
+html {
+  height: 100%;
+}
 body {
+  min-height: 100%;
   margin: 0 50px 0 50px;
   font-family: "Raleway", sans-serif;
   margin: auto;
@@ -16,6 +20,11 @@ body {
 
   font-size: 1rem;
   overflow-x: hidden;
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 0;
 }
 h1 {
   font-size: 1.2rem;
@@ -36,6 +45,10 @@ h3 {
 h4 {
   font-size: 0.8rem;
   font-weight: bold;
+}
+footer p {
+  line-height: 1.8;
+  font-weight: 100;
 }
 
 /*a:hover {
@@ -118,6 +131,7 @@ form i {
   padding: 15px;
   margin-left: 45px;
   font-weight: 700;
+  position: relative;
 }
 #text ::placeholder {
   opacity: 1;
@@ -134,7 +148,7 @@ form i {
   font-size: 1rem;
   text-align: center;
   font-weight: 700;
-  position: relative;
+  position: absolute;
 }
 #rechercher:hover {
   cursor: pointer;
@@ -146,7 +160,6 @@ form i {
   background-color: #0065fc;
   border: none;
   cursor: pointer;
-  position: absolute;
 }
 .button-loupe i {
   border: none;
@@ -158,6 +171,7 @@ form i {
   padding-right: 25px;
   padding-left: 20px;
   font-size: 1.1rem;
+  position: absolute;
 }
 
 /**icone**/
@@ -679,8 +693,17 @@ aside .review {
   aside article {
     width: 95%;
   }
+  aside figure {
+    width: 132px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   aside figure img {
+    object-fit: cover;
     width: 130px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
   }
   aside {
     padding: 0;
@@ -703,9 +726,7 @@ aside .review {
     padding-bottom: 24px;
     text-align: left;
   }
-  article figure img {
-    height: 113px;
-  }
+
   article h4 {
     margin-top: 5px;
   }
@@ -735,6 +756,7 @@ aside .review {
     width: 100%;
     height: 190px;
     display: grid;
+    gap: 0;
     grid-template-columns: 80%;
     grid-template-rows: repeat (6, 120px);
     grid-template-areas:
@@ -750,6 +772,7 @@ aside .review {
   .activities-images {
     height: 135px;
     width: 335px;
+    position: relative;
   }
   .activities-content {
     position: absolute;
@@ -768,13 +791,19 @@ aside .review {
   }
   .parc-calanques {
     grid-area: d;
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .notre-dame {
     grid-area: e;
+    padding-top: 60px;
   }
   .parc-lonchamp {
     grid-area: f;
+    padding-top: 60px;
+  }
+
+  body {
+    padding-bottom: 1000px;
   }
   #renseignements {
     display: flex;
@@ -783,6 +812,15 @@ aside .review {
     padding: 0px;
     padding-left: 20px;
     max-width: 576px;
+    position: absolute;
+    height: 489px;
+    line-height: 2rem;
+  }
+  .background h2 {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+  .background h2 p {
   }
   #à_propos {
     margin-left: 0px;
