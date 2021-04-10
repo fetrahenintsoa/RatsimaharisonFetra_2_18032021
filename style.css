@@ -57,7 +57,7 @@ h1 + p {
   width: 100%;
   max-width: 1400px;*/
 
-/**header**/
+/********************header************************/
 #logo img {
   width: 95px;
   height: 45px;
@@ -69,28 +69,24 @@ h1 + p {
   flex-direction: row;
   justify-content: space-between;
 }
-/**nav**/
-/*.les_deux{
-  padding:50px;
-}*/
+/*********************nav****************************/
+
 .les_trois {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
   margin: 0 0px 0 30px;
   padding-top: 50px;
-  
 }
-.les_trois a{
-  padding:50px 50px 50px 50px;
+.les_trois a {
+  padding: 50px 50px 50px 50px;
   text-align: center;
-  
 }
 
 nav a {
   color: black;
   text-decoration: none;
-  
+
   text-align: center;
 }
 nav a:hover {
@@ -98,13 +94,7 @@ nav a:hover {
   border-top: 2px solid #0065fc;
   padding-top: 48px;
 }
-/*ul strong {
-      text-decoration: overline;
-      color: #0065fc;
-      background-color: none;
-      margin-top: 0px;*/
-
-/*button*/
+/**********************button***********************/
 
 form i {
   display: flex;
@@ -173,8 +163,8 @@ form i {
   position: absolute;
 }
 
-/**icone**/
-/**choice**/
+
+/*******************filtre*******************/
 
 .choice {
   display: flex;
@@ -250,16 +240,13 @@ form i {
   font-size: 0.7rem;
 }
 
-/**MAIN SECTION**/
+/********************MAIN SECTION*********************/
 main {
   width: 100%;
-  /*new today08*/
-
   padding-top: 10px;
 }
 
-/******* ACCOMMODATIONS SECTION *******/
- 
+/***************** ACCOMMODATIONS SECTION *************/
 
 #accommodations {
   display: flex;
@@ -283,7 +270,7 @@ h3 {
   padding-top: 5px;
   margin-top: 0;
 }
-#hosting-in-marseille h2{
+#hosting-in-marseille h2 {
   padding-bottom: 30px;
 }
 
@@ -342,8 +329,7 @@ article figure img {
   height: 100%;
   border-radius: 20px 20px 0 0;
 }
-article h4 {
-}
+
 .review {
   display: flex;
   padding: 6px 0 10px 10px;
@@ -358,12 +344,12 @@ article h4 {
   color: #f2f2f2;
 }
 
-/******ASIDE******/
+/*****************Les plus populaires******************/
 
 aside {
   display: flex;
   flex-direction: column;
-  flex: 1.2; /**?**/
+  flex: 1.2; 
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 30px 40px 10px 25px;
@@ -376,7 +362,7 @@ aside {
   justify-content: space-between;
   padding: 5px 20px;
 }
-#title h2{
+#title h2 {
   margin-bottom: 30px;
 }
 
@@ -393,12 +379,12 @@ aside {
   text-decoration: none;
   border: none;
   padding: 0;
-  color: inherit; /***?***/
+  color: inherit; 
   opacity: 0.7;
 }
 aside article {
   display: flex;
-  
+
   height: 145px;
   background-color: white;
   border: 3px solid #f2f2f2;
@@ -414,7 +400,7 @@ aside figure {
 }
 
 aside figure img {
-  object-fit: cover; /****/
+  object-fit: cover; 
   width: 120px;
   height: 100%;
   border-radius: 20px 0 0 20px;
@@ -436,10 +422,10 @@ aside .review {
   color: black;
 }
 
-/***activities new**/
+/*****************Activités a marseille**************/
 #titles {
- padding-bottom: 30px;
- padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
 
 .activities {
@@ -544,9 +530,8 @@ aside .review {
   padding: 50px;
   background-color: #f2f2f2;
   display: flex;
-  
 }
-footer h2{
+footer h2 {
   padding-top: 0;
   margin-bottom: 8px;
 }
@@ -555,16 +540,14 @@ footer h2{
   flex-grow: 1;
 }
 
-/***********RESPONSIVE***********/
-/**X-SMALL DEVICES -MOBILE**/
-
+/******************************************************RESPONSIVE********************************/
+/*****X-SMALL DEVICES -MOBILE*****/
 @media all and (max-width: 576px) {
-  /***** Code CSS à inclure *****/
   body {
     padding: 0px 0px;
     overflow-x: hidden;
   }
-  /********header******/
+  /**header**/
   header {
     padding: 0px 20px;
   }
@@ -632,7 +615,7 @@ footer h2{
     margin-right: 0px;
     padding: 0 55px 15px 55px;
   }
-  
+
   .button-loupe {
     display: contents;
   }
@@ -656,7 +639,7 @@ footer h2{
   .button {
     margin: 5px;
   }
-  /*******MAIN********/
+  /**MAIN**/
   main {
     margin: 0px 0px;
   }
@@ -734,7 +717,7 @@ footer h2{
     text-align: start;
   }
 
-  /******ACTIVITIES MARSEILLE*******/
+  /**ACTIVITIES MARSEILLE**/
 
   #titles {
     margin-left: 40px;
@@ -799,8 +782,6 @@ footer h2{
   .footer {
     flex-direction: column;
     padding: 0 30px 30px 30px;
-    
-   
   }
   .background h2 {
     padding-bottom: 20px;
@@ -808,14 +789,12 @@ footer h2{
   }
   .footer h2 {
     margin-top: 30px;
-} 
-  body{
+  }
+  /*body {
     padding-bottom: 1000px;
     box-sizing: border-box;
-  }
-  
+  }*/
 
- 
   .notre-dame {
     padding-bottom: 0;
   }
@@ -824,15 +803,12 @@ footer h2{
   }
 }
 
-/**SMALL DEVICES -TABLET**/
+/*******SMALL DEVICES -TABLET********/
 @media all and (min-width: 577px) and (max-width: 768px) {
-  /******header*******/
+  /**header**/
   .header {
     margin: 0 30px 0 30px;
     overflow-x: hidden;
-  }
-  .main {
-    /*emargin: 0 30px 0 30px;*/
   }
   body {
     margin: 0;
@@ -850,7 +826,7 @@ footer h2{
     flex-wrap: wrap;
     gap: 15px;
   }
-  /*******main********/
+  /**main**/
   #accommodations {
     width: 100%;
     max-width: 768px;
@@ -866,10 +842,9 @@ footer h2{
     margin-left: 0;
   }
   #popular {
-    
     width: 100%;
   }
-  /********Activités à marseille*******/
+  /**Activités à marseille**/
   .activities {
     max-width: 768px;
     width: 100%;
@@ -894,18 +869,11 @@ footer h2{
   .iles-frioul {
     padding-top: 0;
   }
-  /*****footer****/
-  #renseignements {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
   
-  }
-  
+ 
 }
 
-/**MEDIUM DEVICES**/
+/**********MEDIUM DEVICES***********/
 
 @media all and (min-width: 769px) and (max-width: 992px) {
   body {
@@ -927,7 +895,7 @@ footer h2{
   #popular {
     margin-left: 70px;
   }
-  /******activites à marseille*****/
+  /**activites à marseille**/
   .activities {
     max-width: 992px;
     width: 100%;
@@ -951,15 +919,11 @@ footer h2{
   .notre-dame {
     padding-bottom: 0;
   }
-  /*footer*****/
   
-    
-    
- 
 }
-/**LARGE DEVICES**/
+/************LARGE DEVICES***********/
 @media all and (min-width: 993px) and (max-width: 1200px) {
-  /*******header**********/
+  /**header**/
 
   body {
     width: 1200;
@@ -973,7 +937,7 @@ footer h2{
     margin-right: 0;
   }
 
-  /******main******/
+  /**main**/
   #accommodations {
     max-width: 1200px;
     width: 100%;
@@ -986,7 +950,7 @@ footer h2{
     padding-top: 15px;
   }
 
-  /******les plus populaires******/
+  /**les plus populaires**/
   aside {
     margin-left: 10px;
     margin-right: 0px;
@@ -1011,7 +975,7 @@ footer h2{
     width: 300px;
   }
 
-  /*****activités a marseille*******/
+  /**activités a marseille**/
   #activities-in-marseille {
     max-width: 1200px;
     width: 100%;
@@ -1038,24 +1002,14 @@ footer h2{
   .activities-content {
     padding: 10px;
   }
-  /*******renseignements**********/
   
-  #renseignements {
- 
+  @media all and (min-width: 1201px) and (max-width: 1500px) {
   
-}
-@media all and (min-width: 1201px) and (max-width:1500px){
-  body {
-    
-    
-  
-    
-  }
   #accomodations {
     padding-left: 0;
     justify-content: center;
   }
-  .footer{
-    margin :0 60px;
+  .footer {
+    margin: 0 100px;
   }
 }
