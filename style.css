@@ -114,8 +114,8 @@ form i {
   border-radius: 15px 0 0 15px;
   color: black;
   width: 5px;
-  height: 8px;
-  border: 1px solid #f2f2f2;
+  height: 9px;
+  border: 1px solid none;
   background-color: #f2f2f2;
 
   margin-right: -0.4em;
@@ -541,7 +541,7 @@ footer h2 {
   #logo {
     max-width: 576px;
     min-width: 100px;
-    height: none;
+    
   }
   h1 {
     margin-right: 0px;
@@ -725,7 +725,7 @@ footer h2 {
     display: grid;
     gap: 0;
     grid-template-columns: 80%;
-    grid-template-rows: repeat (6, 120px);
+    grid-template-rows: repeat (auto-fill, 120px);
     grid-template-areas:
       "a"
       "b"
@@ -734,8 +734,7 @@ footer h2 {
       "e"
       "f";
 
-    margin: 0;
-  }
+    margin: 0;}
   .activities-images {
     height: 135px;
     width: 335px;
@@ -919,7 +918,7 @@ footer h2 {
   /**header**/
 
   body {
-    width: 1200;
+    width: 1200px;
     overflow-x: hidden;
   }
   .logomain {
