@@ -16,8 +16,7 @@ body {
   margin: auto;
   padding: 0 40px;
   font-size: 1rem;
- }
-
+}
 
 h1 {
   font-size: 1.3rem;
@@ -95,11 +94,11 @@ nav a:hover {
   border-top: 2px solid #0065fc;
   padding-top: 48px;
 }
-.onlynav{
-  color:#0065fc;
+.onlynav {
+  color: #0065fc;
 }
-.onlynav a{
-  color:#0065fc;
+.onlynav a {
+  color: #0065fc;
   font-weight: 700;
 }
 .onlynav a:hover {
@@ -173,11 +172,10 @@ form i {
 
   padding-right: 27px;
   padding-left: 20px;
-  
+
   font-size: 1.1rem;
   position: absolute;
 }
-
 
 /*******************filtre*******************/
 
@@ -364,7 +362,7 @@ article figure img {
 aside {
   display: flex;
   flex-direction: column;
-  flex: 1.2; 
+  flex: 1.2;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 30px 40px 10px 25px;
@@ -379,7 +377,6 @@ aside {
   margin-bottom: 30px;
 }
 
-
 #popular {
   display: flex;
   flex-direction: column;
@@ -393,7 +390,7 @@ aside {
   text-decoration: none;
   border: none;
   padding: 0;
-  color: inherit; 
+  color: inherit;
   opacity: 0.7;
 }
 aside article {
@@ -414,7 +411,7 @@ aside figure {
 }
 
 aside figure img {
-  object-fit: cover; 
+  object-fit: cover;
   width: 120px;
   height: 100%;
   border-radius: 20px 0 0 20px;
@@ -496,13 +493,13 @@ aside .review {
   box-shadow: 3px 3px 10px #ccc;
 }
 
-.activities a{
+.activities a {
   text-decoration: none;
 }
-.activities a:hover{
+.activities a:hover {
   color: inherit;
   color: inherit;
-  opacity:0.7;
+  opacity: 0.7;
 }
 
 /**************************footerrrrrrr*************************/
@@ -511,7 +508,6 @@ aside .review {
   padding: 50px;
   background-color: #f2f2f2;
   display: flex;
-  
 }
 footer h2 {
   padding-top: 0;
@@ -541,7 +537,6 @@ footer h2 {
   #logo {
     max-width: 576px;
     min-width: 100px;
-    
   }
   h1 {
     margin-right: 0px;
@@ -629,8 +624,6 @@ footer h2 {
   /**MAIN**/
   #main-sectrion {
     margin: 0px 0px;
-
-    
   }
   #accommodations {
     max-width: 576px;
@@ -638,7 +631,6 @@ footer h2 {
     padding: 0px 0px;
     margin: 0px 0px;
     flex-direction: column-reverse;
-    
   }
 
   #titlepop {
@@ -726,7 +718,7 @@ footer h2 {
     row-gap: 0;
     margin: 0;
     grid-template-columns: 80%;
-    grid-template-rows:repeat(auto-fill,120px);
+    grid-template-rows: repeat(auto-fill, 120px);
     grid-template-areas:
       "a"
       "b"
@@ -734,8 +726,7 @@ footer h2 {
       "d"
       "e"
       "f";
-
-    }
+  }
 
   .activities-images {
     height: 135px;
@@ -749,18 +740,16 @@ footer h2 {
   }
   .vieux-port {
     grid-area: a;
-    
   }
   .fort-pomegues {
     grid-area: b;
-    
+
     padding-top: 80px;
     padding-bottom: 60px;
   }
   .iles-frioul {
     grid-area: c;
     padding-top: 100px;
-
   }
   .parc-calanques {
     grid-area: d;
@@ -783,18 +772,15 @@ footer h2 {
 
   /**footer**/
   .footer {
-  flex-direction: column;
-  padding: 0 30px 30px 30px;
-  /*position:absolute;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    /*position:absolute;
   bottom:0;
   width: 100%;*/
-  
-  
- }
- .footer h2 {
-  margin-top: 30px;
- }  
- 
+  }
+  .footer h2 {
+    margin-top: 30px;
+  }
 }
 
 /*******SMALL DEVICES -TABLET********/
@@ -802,13 +788,11 @@ footer h2 {
   /**header**/
   .header {
     margin: 0 30px 0 30px;
-    
   }
   body {
     margin: 0;
     padding: 0 20px;
     height: auto;
-    
   }
   header {
     padding: 0 20px;
@@ -816,8 +800,8 @@ footer h2 {
   .three {
     margin-right: 0;
   }
-  .three a{
-    padding:50px 10px 50px 0px;
+  .three a {
+    padding: 50px 10px 50px 0px;
   }
   .filter {
     max-width: 768px;
@@ -867,9 +851,6 @@ footer h2 {
   .iles-frioul {
     padding-top: 0;
   }
-  
-  
- 
 }
 
 /**********MEDIUM DEVICES***********/
@@ -918,7 +899,6 @@ footer h2 {
   .notre-dame {
     padding-bottom: 0;
   }
-  
 }
 /************LARGE DEVICES***********/
 @media all and (min-width: 993px) and (max-width: 1200px) {
@@ -1001,9 +981,9 @@ footer h2 {
   .activities-content {
     padding: 10px;
   }
-  
-  @media all and (min-width: 1201px) and (max-width: 1500px) {
-  
+}
+
+@media all and (min-width: 1201px) and (max-width: 1500px) {
   #accomodations {
     padding-left: 0;
     justify-content: center;
