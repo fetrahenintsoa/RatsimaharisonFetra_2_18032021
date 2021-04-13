@@ -723,9 +723,10 @@ footer h2 {
     width: 100%;
     height: 190px;
     display: grid;
-    gap: 0;
+    row-gap: 0;
+    margin: 0;
     grid-template-columns: 80%;
-    grid-template-rows: repeat (auto-fill, 120px);
+    grid-template-rows:repeat(auto-fill,120px);
     grid-template-areas:
       "a"
       "b"
@@ -734,7 +735,8 @@ footer h2 {
       "e"
       "f";
 
-    margin: 0;}
+    }
+
   .activities-images {
     height: 135px;
     width: 335px;
@@ -747,13 +749,18 @@ footer h2 {
   }
   .vieux-port {
     grid-area: a;
+    
   }
   .fort-pomegues {
     grid-area: b;
-    padding-top: 0px;
+    
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
   .iles-frioul {
     grid-area: c;
+    padding-top: 100px;
+
   }
   .parc-calanques {
     grid-area: d;
