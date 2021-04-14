@@ -537,11 +537,17 @@ footer h2 {
 /******************************************************RESPONSIVE********************************/
 /*****X-SMALL DEVICES -MOBILE*****/
 @media all and (max-width: 576px) {
+  body {
+    max-width: 576px;
+    justify-content: center;
+  }
   html {
+  }
+  header {
+    margin: 0 20px;
   }
   main-body {
     margin: 0 20px;
-    width: 100%;
   }
   #main-section {
     padding-top: 10px;
@@ -552,6 +558,7 @@ footer h2 {
   }
   .choice {
     margin: 0px;
+    padding-top: 0;
   }
   /**header**/
 
@@ -576,7 +583,6 @@ footer h2 {
   }
 
   .twonav {
-    width: 100%;
     max-width: 576px;
     display: flex;
     text-align: center;
@@ -584,7 +590,7 @@ footer h2 {
     padding-bottom: 42px;
   }
   .twonav a {
-    padding: 0 100px 15px 55px;
+    padding: 0 80px 15px 55px;
     border-bottom: 2px solid #f2f2f2;
   }
   .twonav a :hover {
@@ -619,7 +625,16 @@ footer h2 {
     margin-right: 0px;
     padding: 0 55px 15px 55px;
   }
+  #text {
+    width: 60%;
+  }
+  form {
+    margin-left: 0;
+  }
 
+  .button {
+    margin: 10px;
+  }
   .button-loupe {
     display: contents;
   }
@@ -640,12 +655,17 @@ footer h2 {
     flex-wrap: wrap;
     padding: 0;
   }
+  .info {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
   /*.button {
     margin: 5px;
   }*/
   /**MAIN**/
   #main-sectrion {
     margin: 0px 0px;
+    padding-top: 30px;
   }
   #accommodations {
     max-width: 576px;
@@ -655,9 +675,6 @@ footer h2 {
     flex-direction: column-reverse;
   }
 
-  #titlepop {
-    padding-bottom: 30px;
-  }
   #popular {
     text-align: center;
     justify-content: center;
@@ -706,6 +723,9 @@ footer h2 {
     padding-bottom: 24px;
     text-align: left;
   }
+  #hotels {
+    padding: 0 0px;
+  }
 
   article h4 {
     margin-top: 5px;
@@ -753,6 +773,7 @@ footer h2 {
     height: 135px;
     width: 335px;
     position: relative;
+    margin-right: 0;
   }
   .activities-content {
     position: absolute;
@@ -797,12 +818,11 @@ footer h2 {
   }*/
   .footer {
     flex-direction: column;
-    padding: 0 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
 
-    width: 100%;
     /*position: absolute;*/
     display: block;
-    margin-top: 900px;
+    margin-top: 930px;
   }
   .footer h2 {
     margin-top: 30px;
