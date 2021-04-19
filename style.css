@@ -769,13 +769,13 @@ footer h2 {
 
   .activities-images {
     height: 135px;
-    width: 100%;
+    width: 200px;
     position: relative;
     margin-right: 0;
   }
   .activities-content {
     position: absolute;
-    width: 70%;
+    width: 168px;
     padding-top: 10px;
   }
   .vieux-port {
@@ -1060,13 +1060,13 @@ footer h2 {
 
   .activities-images {
     height: 135px;
-    width: 100%;
+    width: 246px;
     position: relative;
     margin-right: 0;
   }
   .activities-content {
     position: absolute;
-    width: 71%;
+    width: 213px;
     padding-top: 10px;
   }
   .vieux-port {
@@ -1354,13 +1354,13 @@ footer h2 {
 
   .activities-images {
     height: 135px;
-    width: 100%;
+    width: 335px;
     position: relative;
     margin-right: 0;
   }
   .activities-content {
     position: absolute;
-    width: 71%;
+    width: 290px;
     padding-top: 10px;
     padding-right: 29px;
   }
