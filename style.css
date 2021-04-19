@@ -1354,13 +1354,13 @@ footer h2 {
 
   .activities-images {
     height: 135px;
-    width: 335px;
+    width: 100%;
     position: relative;
     margin-right: 0;
   }
   .activities-content {
     position: absolute;
-    width: 304px;
+    width: 74%;
     padding-top: 10px;
   }
   .vieux-port {
