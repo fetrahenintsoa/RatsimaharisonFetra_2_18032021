@@ -238,7 +238,6 @@ form i {
 .button:hover {
   background-color: #0065fc;
   cursor: pointer;
-  border: none;
 }
 
 .info {
@@ -536,6 +535,7 @@ footer h2 {
 }
 
 /******************************************************RESPONSIVE********************************/
+<<<<<<< HEAD
 @media all and (max-width: 281px) {
   body {
     max-width: 281px;
@@ -1119,8 +1119,10 @@ footer h2 {
   }
 }
 
+=======
+>>>>>>> parent of 39fc734... finition intégrale avec responsive
 /*****X-SMALL DEVICES -MOBILE*****/
-@media all and (min-width: 400px) and (max-width: 576px) {
+@media all and (max-width: 576px) {
   body {
     max-width: 576px;
     justify-content: center;
@@ -1517,7 +1519,9 @@ footer h2 {
   h3 {
     padding-bottom: 20px;
   }
-
+  #popular {
+    margin-left: px;
+  }
   /**activites à marseille**/
   .activities {
     max-width: 992px;
