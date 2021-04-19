@@ -536,6 +536,7 @@ footer h2 {
 
 /******************************************************RESPONSIVE********************************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media all and (max-width: 281px) {
   body {
     max-width: 281px;
@@ -829,6 +830,9 @@ footer h2 {
 }
 
 @media all and (min-width: 282px) and (max-width: 399px) {
+=======
+@media all and (max-width: 399px) {
+>>>>>>> parent of 095c39d... Version final
   body {
     max-width: 399px;
   }
