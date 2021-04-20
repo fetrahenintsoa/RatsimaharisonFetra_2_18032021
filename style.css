@@ -766,6 +766,9 @@ footer h2 {
       "e"
       "f";
   }
+  .activities a {
+    margin: auto;
+  }
 
   .activities-images {
     height: 135px;
@@ -797,7 +800,7 @@ footer h2 {
   }
   .notre-dame {
     grid-area: e;
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .parc-lonchamp {
     grid-area: f;
