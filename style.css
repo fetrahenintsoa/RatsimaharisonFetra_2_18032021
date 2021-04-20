@@ -1057,6 +1057,9 @@ footer h2 {
       "e"
       "f";
   }
+  .activities a {
+    margin: auto;
+  }
 
   .activities-images {
     height: 135px;
@@ -1066,7 +1069,7 @@ footer h2 {
   }
   .activities-content {
     position: absolute;
-    width: 212px;
+    width: 214px; /*modif*/
     padding-top: 10px;
   }
   .vieux-port {
@@ -1350,6 +1353,9 @@ footer h2 {
       "d"
       "e"
       "f";
+  }
+  .activities a {
+    margin: auto;
   }
 
   .activities-images {
